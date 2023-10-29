@@ -7,20 +7,23 @@
     <title>Contacto - Tu Sitio de Cursos de Farmacia</title>
   </head>
   <body>
-    <header>
-      <h1>Contacto</h1>
+    <header id="header">
+      <div class="container flex">
+        <img src="" alt="Logo" />
+        <nav>
+          <ul class="flex">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="./cursos.html">Cursos</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./nosotros.html">Acerca de Nosotros</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="cursos.html">Cursos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="nosotros.html">Acerca de Nosotros</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-    </nav>
     <main>
-      <section>
+      <h1>Contacto</h1>
+      <section class="container">
         <h2>Información de Contacto</h2>
         <p>
           ¡Estamos aquí para ayudarte! Puedes contactarnos de las siguientes
@@ -33,9 +36,9 @@
         </ul>
       </section>
 
-      <section>
+      <section class="container">
         <h2>Formulario de Contacto</h2>
-        <form action="procesar_formulario.php" method="post">
+        <form action="" method="post">
           <label for="nombre">Nombre:</label>
           <input type="text" id="nombre" name="nombre" required />
 
@@ -60,8 +63,8 @@
         </form>
       </section>
     </main>
-    <footer>
-      <p>&copy; 2023 Tu Sitio de Cursos de Farmacia</p>
-    </footer>
+
+    <footer id="footer"></footer>
+    <script src="../js/header-footer.js"></script>
   </body>
 </html>
