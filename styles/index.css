@@ -1,0 +1,23 @@
+#banner {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40rem;
+}
+
+@media (min-width: 480px) {
+  #banner {
+    height: 60rem;
+  }
+}
+
+#main-page {
+  flex-direction: column;
+}
+
+@media (min-width: 480px) {
+  #main-page {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
