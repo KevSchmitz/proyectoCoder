@@ -4,7 +4,7 @@ const path = pathname === "/" ? "/pages" : "";
 // Header
 const header = document.querySelector("#header");
 header.innerHTML = `
-<div class="container flex">
+<div class="container">
 <a href="/"><img src="" alt="Logo" /></a>
 <nav>
 <ul class="flex">

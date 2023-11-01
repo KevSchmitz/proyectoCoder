@@ -69,9 +69,9 @@ main {
   margin: 0 auto;
 }
 
-.flex {
+/* .flex {
   display: flex;
-}
+} */
 
 #header {
   padding: 2rem 0 5rem;
@@ -83,7 +83,7 @@ main {
 }
 
 #header > div {
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
@@ -91,19 +91,19 @@ main {
 
 @media (min-width: 480px) {
   #header > div {
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
   }
 }
 
 nav > ul {
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 1rem;
 }
 
 @media (min-width: 480px) {
   nav > ul {
-    flex-direction: row;
+    /* flex-direction: row; */
     gap: 4rem;
   }
 }
