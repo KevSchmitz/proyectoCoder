@@ -1,5 +1,6 @@
 const pathname = window.location.pathname;
-const path = pathname === "/" ? "/pages" : "";
+console.log(pathname);
+const path = pathname === "/" || pathname === "/index.html" ? "/pages" : "";
 
 // Header
 const header = document.querySelector("#header");
