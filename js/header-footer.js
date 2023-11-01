@@ -1,5 +1,4 @@
 const pathname = window.location.pathname;
-console.log(pathname);
 const path = pathname === "/" || pathname === "/index.html" ? "/pages" : "";
 
 // Header
