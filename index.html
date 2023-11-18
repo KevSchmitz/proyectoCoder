@@ -9,7 +9,7 @@
   <body>
     <!-- HEADER -->
     <header id="header">
-      <div class="container flex">
+      <div class="flex container">
         <a href="/"><img src="" alt="Logo" /></a>
         <nav>
           <ul class="flex">
@@ -22,8 +22,7 @@
         </nav>
       </div>
     </header>
-
-    <section id="banner">
+    <section id="banner" class="flex">
       <div id="inicio" class="container">
         <h1>Bienvenido a Nuestra Tienda de Cursos de Farmacia</h1>
         <!--
@@ -35,8 +34,11 @@
         <p>Encuentra los mejores cursos para tu formación en farmacia.</p>
       </div>
     </section>
-    <div id="main-page" class="container">
+
+    <div id="main-page" class="container flex">
+      <!-- MAIN -->
       <main>
+        <!-- CURSOS -->
         <section id="cursos">
           <h2>Cursos de Farmacia</h2>
           <!--
@@ -54,6 +56,7 @@
           <a href="./pages/cursos.html" class="btn">Ver Todos los Cursos</a>
         </section>
 
+        <!-- POR QUÉ NOSOTROS -->
         <section id="porque-nosotros">
           <h2>Por Qué Elegir Nuestros Cursos</h2>
           <!--
@@ -70,6 +73,7 @@
           </p>
         </section>
 
+        <!-- EVENTOS -->
         <section id="eventos">
           <h2>Eventos y Promociones Especiales</h2>
           <!--
@@ -87,6 +91,7 @@
         </section>
       </main>
 
+      <!-- ASIDE -->
       <aside>
         <h2>Anuncios y Recursos</h2>
         <!-- Título para la sección aside -->
@@ -122,7 +127,9 @@
       </aside>
     </div>
 
-    <footer id="footer"></footer>
-    <script src="./js/header-footer.js"></script>
+    <!-- FOOTER -->
+    <footer id="footer">
+      <p>&copy; 2023 Tu Sitio de Cursos de Farmacia</p>
+    </footer>
   </body>
 </html>

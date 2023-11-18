@@ -12,13 +12,7 @@
 
 *,
 *::before,
-*::after,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+*::after {
   margin: 0;
   padding: 0;
   font-size: 1.8rem;
@@ -93,6 +87,7 @@ main {
 }
 
 #header > div {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -119,7 +114,6 @@ nav > ul {
 }
 
 /* INDEX */
-
 #banner {
   justify-content: center;
   align-items: center;
