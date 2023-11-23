@@ -76,10 +76,7 @@ li {
   list-style: none;
 }
 
-/* CSS */
-.flex {
-  display: flex;
-}
+/* HEADER */
 
 #header {
   padding: 2rem 0 5rem;
@@ -111,6 +108,7 @@ li {
   }
 }
 
+/* NAV */
 nav > ul {
   flex-direction: column;
 }
@@ -122,7 +120,7 @@ nav > ul {
   }
 }
 
-/* INDEX */
+/* BANNER */
 #banner {
   font-weight: 700;
   height: 40rem;
@@ -136,10 +134,6 @@ nav > ul {
   background-position: center;
   color: var(--primary-color-50);
 }
-#banner h1 {
-  color: var(--primary-color-50);
-  /* color: var(--white); */
-}
 
 @media (min-width: 480px) {
   #banner {
@@ -147,6 +141,7 @@ nav > ul {
   }
 }
 
+/* MAIN */
 #inicio {
   width: inherit;
   height: inherit;
@@ -166,6 +161,18 @@ nav > ul {
     flex-direction: row;
     gap: 2rem;
   }
+}
+
+/* POR QUE NOSOTROS */
+#porque-nosotros {
+  height: 40rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark);
+}
+
+#porque-nosotros p {
+  color: var(--primary-color-50);
 }
 
 /* ASIDE */
