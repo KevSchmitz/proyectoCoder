@@ -1,15 +1,23 @@
-/* VARIABLES */
+/* FUENTES */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap");
 
 /* NORMALIZE */
 @import url("./normalize.css");
 
+/* VARIABLES */
 :root {
   --primary-font: "Roboto";
   --secundary-font: "Raleway";
-  --bg-dark: #202124;
+  --primary-color-900: #df5144;
+  --primary-color-500: #e78152;
+  --primary-color-200: #feca76;
+  --primary-color-50: #f8ebc8;
+  --secondary-color-200: #67b5bd;
+  --white: #ffffff;
+  --dark: #23201f;
 }
 
+/* RESET */
 *,
 *::before,
 *::after {
@@ -44,46 +52,48 @@ h6 {
 
 h1 {
   font-size: 3.6rem;
+  color: var(--primary-color-500);
 }
 h2 {
   font-size: 3rem;
+  color: var(--primary-color-500);
 }
 h3 {
   font-size: 2.4rem;
+  color: var(--primary-color-500);
+}
+
+p {
+  font-size: 2rem;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--secondary-color-200);
 }
 
 li {
   list-style: none;
 }
 
-section,
-aside,
-main {
-  margin: 2rem 0;
-}
-
-.container {
-  width: 95%;
-  max-width: 120rem;
-  margin: 0 auto;
-}
-
+/* CSS */
 .flex {
   display: flex;
 }
 
 #header {
   padding: 2rem 0 5rem;
-  color: white;
-  background-color: var(--bg-dark);
+  background-color: var(--dark);
+  box-shadow: 0px 3px 4px black;
 }
 #header a {
-  color: white;
+  color: var(--white);
+  transition: all 0.4s;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#header a:hover {
+  color: var(--primary-color-500);
 }
 
 #header > div {
@@ -103,28 +113,44 @@ main {
 
 nav > ul {
   flex-direction: column;
-  gap: 1rem;
 }
 
 @media (min-width: 480px) {
   nav > ul {
     flex-direction: row;
-    gap: 4rem;
+    gap: 2rem;
   }
 }
 
 /* INDEX */
 #banner {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  font-weight: 700;
   height: 40rem;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.55),
+      rgba(35, 32, 31, 0.55)
+    ),
+    url("https://s.libertaddigital.com/2021/06/03/1920/1080/fit/laboratorio-vacuna-covid-archivo-030621.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--primary-color-500);
 }
 
 @media (min-width: 480px) {
   #banner {
     height: 60rem;
   }
+}
+
+#inicio {
+  width: inherit;
+  height: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(0.4rem);
 }
 
 #main-page {
@@ -138,12 +164,18 @@ nav > ul {
   }
 }
 
+/* ASIDE */
+
+aside h2 {
+  color: var(--primary-color-500);
+}
+
 /* FOOTER */
 
 #footer {
   padding: 5rem 0 2rem;
   text-align: center;
-  color: white;
-  background-color: var(--bg-dark);
+  color: var(--white);
+  background-color: var(--dark);
   margin-top: auto;
 }
