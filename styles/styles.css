@@ -76,6 +76,11 @@ li {
   list-style: none;
 }
 
+ol,
+ul {
+  padding-left: 0;
+}
+
 /* HEADER */
 
 #header {
@@ -132,6 +137,7 @@ nav > ul {
     url("https://s.libertaddigital.com/2021/06/03/1920/1080/fit/laboratorio-vacuna-covid-archivo-030621.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   color: var(--primary-color-50);
 }
 
@@ -163,12 +169,48 @@ nav > ul {
   }
 }
 
+/* CURSOS */
+#cursos {
+  margin: 2rem auto;
+  padding: 5rem;
+}
+
+/* LISTA CURSOS */
+.lista-cursos {
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.curso-card {
+  width: 35rem;
+  padding: 2rem;
+  border: var(--dark) solid 1px;
+}
+.curso-card a {
+  display: block;
+  padding: 1rem 3rem;
+  text-align: center;
+  background-color: var(--secondary-color-200);
+  color: var(--white);
+  text-transform: uppercase;
+  /* font-weight: bold; */
+}
+
 /* POR QUE NOSOTROS */
+
 #porque-nosotros {
-  height: 40rem;
   justify-content: center;
   align-items: center;
   background-color: var(--dark);
+  margin: 2rem auto;
+  padding: 10rem 0;
+}
+
+#porque-nosotros > div {
+  max-width: 60rem;
 }
 
 #porque-nosotros p {
