@@ -1,0 +1,285 @@
+/* FUENTES */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap");
+
+/* NORMALIZE */
+@import url("./normalize.css");
+
+/* VARIABLES */
+:root {
+  --primary-font: "Roboto";
+  --secundary-font: "Raleway";
+  --primary-color-900: #df5144;
+  --primary-color-500: #e78152;
+  --primary-color-200: #feca76;
+  --primary-color-50: #f8ebc8;
+  --secondary-color-200: #67b5bd;
+  --white: #ffffff;
+  --dark: #23201f;
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  font-family: "Roboto", "Open Sans";
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding-top: 14rem;
+}
+
+@media (min-width: 991px) {
+  body {
+    padding-top: 11.7rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", "Open Sans";
+  font-weight: bold;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.6rem;
+  color: var(--primary-color-500);
+}
+h2 {
+  font-size: 3rem;
+  color: var(--primary-color-500);
+}
+h3 {
+  font-size: 2.4rem;
+  color: var(--primary-color-500);
+}
+
+p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color-200);
+}
+
+li {
+  list-style: none;
+}
+
+ol,
+ul {
+  padding-left: 0;
+}
+
+/* HEADER */
+
+#header {
+  position: fixed;
+  width: 100vw;
+  margin-top: -14rem;
+  padding: 2rem 0 5rem;
+  background-color: var(--dark);
+  box-shadow: 0px 3px 4px black;
+  z-index: 1;
+}
+
+@media (min-width: 991px) {
+  #header {
+    margin-top: -11.7rem;
+  }
+}
+
+#header a {
+  color: var(--primary-color-50);
+  transition: all 0.4s;
+  text-transform: uppercase;
+  /* font-weight: 700; */
+  font-size: 1.8rem;
+}
+#header span {
+  font-weight: 900;
+}
+#header a:hover {
+  color: var(--primary-color-500);
+}
+
+#header > div {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem; */
+}
+
+#header button {
+  width: 6rem;
+  height: 6rem;
+  border: none;
+  color: var(--primary-color-50);
+}
+#header svg {
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+}
+
+/* NAV */
+nav > ul {
+  flex-direction: column;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+@media (min-width: 480px) {
+  nav > ul {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+/* BANNER */
+#banner {
+  font-weight: 700;
+  height: 40rem;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.55),
+      rgba(35, 32, 31, 0.55)
+    ),
+    url("https://s.libertaddigital.com/2021/06/03/1920/1080/fit/laboratorio-vacuna-covid-archivo-030621.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--primary-color-50);
+}
+
+@media (min-width: 480px) {
+  #banner {
+    height: 60rem;
+  }
+}
+
+/* MAIN */
+#inicio {
+  width: inherit;
+  height: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(0.4rem);
+}
+
+#main-page {
+  flex-direction: column;
+}
+
+@media (min-width: 480px) {
+  #main-page {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+/* CURSOS */
+#cursos {
+  margin: 2rem auto;
+}
+
+.cursos-enlace {
+  display: block;
+  text-align: end;
+}
+
+/* LISTA CURSOS */
+.lista-cursos {
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.curso-card {
+  width: 35rem;
+  padding: 2rem;
+  border: var(--dark) solid 1px;
+}
+
+.curso-card a {
+  display: block;
+  padding: 1rem 3rem;
+  text-align: center;
+  background-color: var(--secondary-color-200);
+  color: var(--white);
+  text-transform: uppercase;
+  /* font-weight: bold; */
+}
+
+/* POR QUE NOSOTROS */
+
+#porque-nosotros {
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark);
+  margin: 2rem auto;
+  padding: 5rem 0;
+}
+
+#porque-nosotros > div {
+  max-width: 60rem;
+}
+
+#porque-nosotros p {
+  color: var(--primary-color-50);
+}
+
+/* ASIDE */
+
+aside h2 {
+  color: var(--primary-color-500);
+}
+
+.recursos {
+  justify-content: center;
+}
+
+.testimonios {
+  max-width: 50rem;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 5rem;
+  background-color: var(--primary-color-200);
+}
+
+/* FOOTER */
+
+#footer {
+  padding: 5rem 0 2rem;
+  text-align: center;
+  color: var(--primary-color-50);
+  background-color: var(--dark);
+  margin-top: auto;
+}
