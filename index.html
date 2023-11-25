@@ -3,13 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
     <title>Tu Sitio de Cursos de Farmacia</title>
   </head>
   <body>
-    <header id="header"></header>
-    <section id="banner" class="flex">
-      <div id="inicio" class="container">
+    <!-- HEADER -->
+    <header id="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <div>
+            <a class="navbar-brand" href="/">FARMA<span>COURSES</span></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/cursos.html">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/blog.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="banner">
+      <div id="inicio" class="d-flex">
         <h1>Bienvenido a Nuestra Tienda de Cursos de Farmacia</h1>
         <!--
           "Bienvenido a Nuestra Tienda de Cursos de Farmacia"
@@ -20,112 +77,108 @@
         <p>Encuentra los mejores cursos para tu formación en farmacia.</p>
       </div>
     </section>
-    <div id="main-page" class="container flex">
-      <main>
-        <section id="cursos">
+
+    <!-- MAIN -->
+    <main>
+      <!-- CURSOS -->
+      <section id="cursos">
+        <div class="container">
           <h2>Cursos de Farmacia</h2>
           <!--
-            "Nuestros Cursos de Farmacia"
-            "Explora Nuestra Oferta de Cursos"
-            "Formación en Farmacia a tu Alcance"
-          -->
-
+              "Nuestros Cursos de Farmacia"
+              "Explora Nuestra Oferta de Cursos"
+              "Formación en Farmacia a tu Alcance"
+            -->
           <p>
             Descubre nuestra amplia variedad de cursos de farmacia diseñados
             para tu formación académica y profesional. Ya sea que estés
             interesado en la farmacología, la atención al paciente o la gestión
             de farmacias, tenemos cursos que se adaptan a tus necesidades.
           </p>
-          <a href="./pages/cursos.html" class="btn">Ver Todos los Cursos</a>
-        </section>
 
-        <section id="noticias">
-          <h2>Noticias y Actualizaciones</h2>
-          <!--
-            "Noticias y Actualizaciones"
-            "Lo Último en Farmacia"
-            "Mantente Informado en el Mundo Farmacéutico"
-          -->
+          <!-- LISTA CURSOS -->
+          <div class="">
+            <ul class="lista-cursos row">
+              <li class="curso-card col-6">
+                <img src="" alt="" />
+                <h3>Curso de Farmacología avanzada</h3>
+                <p>
+                  Este curso avanzado te sumergirá en el mundo de la
+                  farmacología, cubriendo temas complejos y avanzados.
+                </p>
+                <a href="">Ver mas</a>
+              </li>
+              <li class="curso-card col-4">
+                <img src="" alt="" />
+                <h3>Curso de Dispensación de Medicamentos</h3>
+                <p>
+                  Aprende las prácticas seguras y efectivas de dispensación de
+                  medicamentos en este curso esencial.
+                </p>
+                <a href="">Ver mas</a>
+              </li>
+              <li class="curso-card col-2">
+                <img src="" alt="" />
+                <h3>Curso de Dispensación de Medicamentos</h3>
+                <p>
+                  Aprende las prácticas seguras y efectivas de dispensación de
+                  medicamentos en este curso esencial.
+                </p>
+                <a href="">Ver mas</a>
+              </li>
+            </ul>
+          </div>
 
-          <p>
-            Aquí puedes agregar contenido relevante, como noticias o anuncios
-            importantes relacionados con la farmacia. Por ejemplo, podrías
-            presentar información sobre eventos próximos, noticias de la
-            industria farmacéutica o consejos de salud.
-          </p>
-        </section>
+          <div class="cursos-enlace">
+            <a href="./pages/cursos.html">Ver Todos los Cursos >>></a>
+          </div>
+        </div>
+      </section>
 
-        <section id="porque-nosotros">
+      <!-- POR QUÉ NOSOTROS -->
+      <section id="porque-nosotros" class="d-flex">
+        <div class="container">
           <h2>Por Qué Elegir Nuestros Cursos</h2>
           <!--
-            "Por Qué Elegir Nuestros Cursos"
-            "Nuestra Propuesta de Valor"
-            "Experiencia de Aprendizaje de Calidad"
-          -->
-
+              "Por Qué Elegir Nuestros Cursos"
+              "Nuestra Propuesta de Valor"
+              "Experiencia de Aprendizaje de Calidad"
+            -->
           <p>
             En esta sección, puedes destacar las ventajas de inscribirte en tus
             cursos, como instructores expertos, material de estudio de alta
-            calidad o la flexibilidad para estudiar a tu propio ritmo. Además,
+            calidad o la d-flexibilidad para estudiar a tu propio ritmo. Además,
             puedes incluir testimonios de estudiantes satisfechos.
           </p>
-        </section>
+        </div>
+      </section>
+    </main>
 
-        <section id="recursos">
-          <h2>Recursos Útiles</h2>
-          <!--
-            "Recursos Útiles"
-            "Herramientas para Estudiantes"
-            "Materiales de Estudio Recomendados"
-          -->
+    <!-- ASIDE -->
+    <aside class="container">
+      <h2>Anuncios y Recursos</h2>
 
-          <p>
-            Aquí puedes proporcionar recursos adicionales, como enlaces a libros
-            recomendados, artículos de blog relacionados con la farmacia o
-            herramientas útiles para los estudiantes. Haz que esta sección sea
-            informativa y valiosa para tus visitantes.
-          </p>
-        </section>
+      <!-- Esta sección adicional podría ser utilizada para promocionar eventos
+        especiales, como seminarios web, conferencias o descuentos temporales en
+        cursos. Asegúrate de mantenerla actualizada con información relevante. -->
 
-        <section id="eventos">
-          <h2>Eventos y Promociones Especiales</h2>
-          <!--
-            "Eventos y Promociones Especiales"
-            "No te Pierdas Nuestros Eventos"
-            "Ofertas y Descuentos Exclusivos"
-          -->
-
-          <p>
-            Esta sección adicional podría ser utilizada para promocionar eventos
-            especiales, como seminarios web, conferencias o descuentos
-            temporales en cursos. Asegúrate de mantenerla actualizada con
-            información relevante.
-          </p>
-        </section>
-      </main>
-
-      <aside>
-        <h2>Anuncios y Recursos</h2>
-        <!-- Título para la sección aside -->
-
-        <div class="anuncio">
-          <img src="anuncio1.jpg" alt="Anuncio 1" />
+      <div class="row recursos">
+        <section class="anuncio col-sm-6">
+          <h3>Anuncios</h3>
           <p>
             ¡Especial de Inscripción! Descuento del 20% en todos los cursos este
             mes. ¡No te lo pierdas!
           </p>
-        </div>
-
-        <div class="enlaces-relacionados">
+        </section>
+        <section class="enlaces-relacionados col-sm-6">
           <h3>Enlaces Relacionados</h3>
           <ul>
-            <li><a href="#">Revista Farmacéutica - Último número</a></li>
-            <li><a href="#">Asociación de Farmacéuticos</a></li>
-            <li><a href="#">Base de Datos Médicos</a></li>
+            <li><a href="#">- Revista Farmacéutica - Último número</a></li>
+            <li><a href="#">- Asociación de Farmacéuticos</a></li>
+            <li><a href="#">- Base de Datos Médicos</a></li>
           </ul>
-        </div>
-
-        <div class="testimonios">
+        </section>
+        <section class="testimonios col-sm-12">
           <h3>Testimonios de Estudiantes</h3>
           <p>
             "Los cursos aquí han mejorado mi conocimiento farmacéutico de manera
@@ -135,11 +188,18 @@
             "Excelentes instructores y contenido de alta calidad. ¡Muy
             satisfecho con mi experiencia!"
           </p>
-        </div>
-      </aside>
-    </div>
+        </section>
+      </div>
+    </aside>
 
-    <footer id="footer"></footer>
-    <script src="./js/header-footer.js"></script>
+    <!-- FOOTER -->
+    <footer id="footer">
+      <p>&copy; 2023 Tu Sitio de Cursos de Farmacia</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
