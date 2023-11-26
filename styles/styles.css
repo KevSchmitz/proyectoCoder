@@ -126,14 +126,6 @@ ul {
   color: var(--primary-color-500);
 }
 
-#header > div {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem; */
-}
-
 #header button {
   width: 6rem;
   height: 6rem;
