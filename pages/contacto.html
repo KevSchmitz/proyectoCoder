@@ -84,14 +84,20 @@
       <section class="container">
         <h2>Formulario de Contacto</h2>
         <form action="" method="post">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required />
+          <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
 
-          <label for="correo">Correo Electrónico:</label>
-          <input type="email" id="correo" name="correo" required />
+          <div>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required />
+          </div>
 
-          <label for="asunto">Asunto:</label>
-          <input type="text" id="asunto" name="asunto" required />
+          <div>
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required />
+          </div>
           <!-- 
             El campo "Asunto" es donde el visitante debe proporcionar una breve descripción del motivo de su contacto. Algunos ejemplos de lo que podría incluirse en este campo son:
             Consulta sobre un curso específico.
@@ -101,10 +107,12 @@
             Comentarios o sugerencias para mejorar el sitio web. 
           -->
 
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          <div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          </div>
 
-          <button type="submit">Enviar Mensaje</button>
+          <button class="button" type="submit">Enviar Mensaje</button>
         </form>
       </section>
     </main>

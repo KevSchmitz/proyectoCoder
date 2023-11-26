@@ -13,6 +13,7 @@
   --primary-color-200: #feca76;
   --primary-color-50: #f8ebc8;
   --secondary-color-200: #67b5bd;
+  --secondary-color-200-darker: #48939b;
   --white: #ffffff;
   --dark: #23201f;
 }
@@ -89,6 +90,10 @@ ul {
   padding-left: 0;
 }
 
+.container {
+  max-width: 120rem;
+}
+
 /* HEADER */
 
 #header {
@@ -109,9 +114,9 @@ ul {
 
 #header a {
   color: var(--primary-color-50);
-  transition: all 0.4s;
+  transition: all 0.4s ease-in-out;
   text-transform: uppercase;
-  /* font-weight: 700; */
+
   font-size: 1.8rem;
 }
 #header span {
@@ -205,37 +210,67 @@ nav > ul {
 }
 
 /* CURSOS */
-#cursos {
+.cursos {
   margin: 2rem auto;
+}
+
+.cursos .row > * {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .cursos-enlace {
   display: block;
   text-align: end;
 }
+.cursos-enlace a:hover {
+  transition: all 0.4s ease-in-out;
+}
+
+.cursos-enlace a:hover {
+  color: var(--secondary-color-200-darker);
+}
 
 /* LISTA CURSOS */
+
 .lista-cursos {
-  gap: 2rem;
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
 }
 
 .curso-card {
-  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 2rem;
+  justify-content: space-between;
   border: var(--dark) solid 1px;
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px 0px black;
+}
+.curso-card p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
 }
 
-.curso-card a {
+.button {
   display: block;
   padding: 1rem 3rem;
   text-align: center;
   background-color: var(--secondary-color-200);
   color: var(--white);
   text-transform: uppercase;
-  /* font-weight: bold; */
+  border: 2px solid var(--secondary-color-200-darker);
+  border-radius: 1rem;
+  transition: all 0.4s ease-in-out;
+}
+.button:hover {
+  background-color: var(--secondary-color-200-darker);
+  color: var(--primary-color-50);
 }
 
 /* POR QUE NOSOTROS */
@@ -254,6 +289,26 @@ nav > ul {
 
 #porque-nosotros p {
   color: var(--primary-color-50);
+}
+
+/* FORM */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 40rem;
+  margin: 2rem auto;
+}
+
+form label {
+  display: block;
+}
+
+form input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
 }
 
 /* ASIDE */
