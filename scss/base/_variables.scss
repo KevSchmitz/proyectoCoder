@@ -1,13 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap");
-:root {
-  --primary-font: "Roboto";
-  --secundary-font: "Raleway";
-  --primary-color-900: #df5144;
-  --primary-color-500: #e78152;
-  --primary-color-200: #feca76;
-  --primary-color-50: #f8ebc8;
-  --secondary-color-200: #67b5bd;
-  --secondary-color-200-darker: #48939b;
-  --white: #ffffff;
-  --dark: #23201f;
-}
+
+$primary-font: "Roboto";
+$secundary-font: "Raleway";
+$primary-color-900: #df5144;
+$primary-color-500: #e78152;
+$primary-color-200: #feca76;
+$primary-color-50: #f8ebc8;
+$secondary-color-200: #67b5bd;
+$secondary-color-200-darker: #48939b;
+$white: #ffffff;
+$dark: #23201f;
+
+// :root {
+//   --primary-font: "Roboto";
+//   --secundary-font: "Raleway";
+//   --primary-color-900: #df5144;
+//   --primary-color-500: #e78152;
+//   --primary-color-200: #feca76;
+//   --primary-color-50: #f8ebc8;
+//   --secondary-color-200: #67b5bd;
+//   --secondary-color-200-darker: #48939b;
+//   --white: #ffffff;
+//   --dark: #23201f;
+// }

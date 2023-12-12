@@ -1,3 +1,5 @@
+@import "variables";
+
 /* RESET */
 
 *,
@@ -6,7 +8,7 @@
   margin: 0;
   padding: 0;
   font-size: 1.8rem;
-  font-family: "Roboto", "Open Sans";
+  font-family: $primary-font, "Open Sans";
 }
 
 html {
@@ -33,7 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", "Open Sans";
+  font-family: $secundary-font, "Open Sans";
   font-weight: bold;
   margin: 2rem 0;
   text-align: center;
@@ -41,15 +43,15 @@ h6 {
 
 h1 {
   font-size: 3.6rem;
-  color: var(--primary-color-500);
+  color: $primary-color-500;
 }
 h2 {
   font-size: 3rem;
-  color: var(--primary-color-500);
+  color: $primary-color-500;
 }
 h3 {
   font-size: 2.4rem;
-  color: var(--primary-color-500);
+  color: $primary-color-500;
 }
 
 p {
@@ -59,7 +61,7 @@ p {
 
 a {
   text-decoration: none;
-  color: var(--secondary-color-200);
+  color: $secondary-color-200;
 }
 
 li {
