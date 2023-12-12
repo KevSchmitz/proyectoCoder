@@ -157,28 +157,6 @@ nav > ul {
   }
 }
 
-/* BANNER */
-#banner {
-  font-weight: 700;
-  height: 40rem;
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.55),
-      rgba(35, 32, 31, 0.55)
-    ),
-    url("https://s.libertaddigital.com/2021/06/03/1920/1080/fit/laboratorio-vacuna-covid-archivo-030621.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: var(--primary-color-50);
-}
-
-@media (min-width: 480px) {
-  #banner {
-    height: 60rem;
-  }
-}
-
 /* MAIN */
 #inicio {
   width: inherit;

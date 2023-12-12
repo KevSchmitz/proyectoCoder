@@ -1,0 +1,17 @@
+/* POR QUE NOSOTROS */
+
+#porque-nosotros {
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark);
+  margin: 2rem auto;
+  padding: 5rem 0;
+
+  & > div {
+    max-width: 60rem;
+  }
+
+  p {
+    color: var(--primary-color-50);
+  }
+}

@@ -1,0 +1,76 @@
+/* RESET */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  font-family: "Roboto", "Open Sans";
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding-top: 14rem;
+}
+
+@media (min-width: 991px) {
+  body {
+    padding-top: 11.7rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", "Open Sans";
+  font-weight: bold;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.6rem;
+  color: var(--primary-color-500);
+}
+h2 {
+  font-size: 3rem;
+  color: var(--primary-color-500);
+}
+h3 {
+  font-size: 2.4rem;
+  color: var(--primary-color-500);
+}
+
+p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color-200);
+}
+
+li {
+  list-style: none;
+}
+
+ol,
+ul {
+  padding-left: 0;
+}
+
+.container {
+  max-width: 120rem;
+}
