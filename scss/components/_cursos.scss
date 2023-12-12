@@ -1,0 +1,61 @@
+/* CURSOS */
+.cursos {
+  margin: 2rem auto;
+  .row > * {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.cursos-enlace {
+  display: block;
+  text-align: end;
+
+  a:hover {
+    transition: all 0.4s ease-in-out;
+    color: var(--secondary-color-200-darker);
+  }
+}
+
+/* LISTA CURSOS */
+
+.lista-cursos {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.curso-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2rem;
+  justify-content: space-between;
+  border: var(--dark) solid 1px;
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px 0px black;
+  p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+  }
+}
+
+.button {
+  display: block;
+  padding: 1rem 3rem;
+  text-align: center;
+  background-color: var(--secondary-color-200);
+  color: var(--white);
+  text-transform: uppercase;
+  border: 2px solid var(--secondary-color-200-darker);
+  border-radius: 1rem;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    background-color: var(--secondary-color-200-darker);
+    color: var(--primary-color-50);
+  }
+}
