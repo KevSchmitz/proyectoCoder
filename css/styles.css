@@ -574,6 +574,33 @@ aside h2 {
   color: #f8ebc8;
 }
 
+.equipo {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.perfil {
+  text-align: center;
+}
+.perfil img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.perfil h3 {
+  color: black;
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+}
+.perfil p {
+  font-size: 1.5rem;
+  color: gray;
+}
+
 /* FORM */
 .informacion-contacto {
   text-align: center;
@@ -597,8 +624,8 @@ form textarea {
 
 article {
   border-bottom: 1px rgba(211, 211, 211, 0.7) solid;
-  padding-bottom: 2rem;
-  margin-top: 2rem;
+  padding-bottom: 4rem;
+  margin-top: 4rem;
 }
 article h3 {
   text-transform: uppercase;
