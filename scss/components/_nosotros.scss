@@ -15,3 +15,32 @@
     color: $primary-color-50;
   }
 }
+
+.equipo {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.perfil {
+  text-align: center;
+
+  img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    color: black;
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: gray;
+  }
+}
